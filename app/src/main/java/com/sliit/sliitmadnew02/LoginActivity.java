@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity
     private ProgressDialog loadingBar;
     private String parentDbName = "Users";
 
-    private TextView AdminLink , NotAdminLink;
+    private TextView AdminLink , NotAdminLink ;
     private TextView ForgetPasswordLink;
 
     private CheckBox chkBoxRememberMe;
@@ -51,6 +51,9 @@ public class LoginActivity extends AppCompatActivity
         NotAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
 
         ForgetPasswordLink = (TextView) findViewById(R.id.forget_password_link);
+
+
+
 
         Paper.init(this);
 
@@ -93,6 +96,7 @@ public class LoginActivity extends AppCompatActivity
                 startActivity(forgetPasswordIntent);
             }
         });
+
     }
 
     private void LoginUser()

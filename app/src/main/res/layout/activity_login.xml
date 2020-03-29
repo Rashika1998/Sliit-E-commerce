@@ -124,4 +124,18 @@
         android:visibility="invisible"
         />
 
+    <TextView
+        android:id="@+id/requester_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm a requester..?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/not_admin_panel_link"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="25dp"
+        />
+
 </RelativeLayout>
