@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="See Your Cart"
+        android:icon="@drawable/nav_cart"
+        />
+    <item
+        android:id="@+id/nav_search"
+        android:title="Search Any Product"
+        android:icon="@drawable/search"
+        />
+    <item
+        android:id="@+id/nav_categories"
+        android:title="See The Category"
+        android:icon="@drawable/category"
+        />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Your Profile Settings"
+        android:icon="@drawable/ic_menu_manage"
+        />
+    <item
+        android:id="@+id/nav_Logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        />
+
+</menu>

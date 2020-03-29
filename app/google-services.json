@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "832707744898",
+    "firebase_url": "https://sliitmadnew02.firebaseio.com",
+    "project_id": "sliitmadnew02",
+    "storage_bucket": "sliitmadnew02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832707744898:android:252f7a43e6cd8745b7909b",
+        "android_client_info": {
+          "package_name": "com.sliit.sliitmadnew02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832707744898-2hi90c77sij6so62u68s610ee1i4vi9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sliit.sliitmadnew02",
+            "certificate_hash": "6f9b5bf2876fe1fb05030464789905c93f9d91e7"
+          }
+        },
+        {
+          "client_id": "832707744898-989c6plg091ikk6lq4ih17mg7hgnbfj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBarJlPorO4Vj5Z0cDh7vtIR121Z1yzU8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832707744898-989c6plg091ikk6lq4ih17mg7hgnbfj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
