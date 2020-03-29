@@ -2,5 +2,25 @@
 <resources>
     <color name="colorPrimary">#31a9d3</color>
     <color name="colorPrimaryDark">#31a9d3</color>
-    <color name="colorAccent">#31a9d3</color>
+
+    <color name="colorAccent">#E9EBEE</color>
+    <color name="colorProfile">#3B4041</color>
+    <color name="mainBackground">#E9EBEE</color>
+    <color name="sendercolor">#A0179E</color>
+    <color name="profileSettings">#411313</color>
+    <color name="sample">#fefefd</color>
+
+    //colors for product type buttons
+
+    <color name="healthy">#221c62</color>
+    <color name="electrical">#591a39</color>
+    <color name="beauty">#cb4b97</color>
+    <color name="furniture">#154815</color>
+    <color name="other">#535719</color>
+    <color name="lightBlue">#3c65c6</color>
+    <color name="aboutUsText">#bd9b37</color>
+    <color name="sample1">#44c9c1</color>
+    <color name="yellow">#f0d21a</color>
+    <color name="red">#d10c22</color>
+    <color name="orange">#f39506</color>
 </resources>

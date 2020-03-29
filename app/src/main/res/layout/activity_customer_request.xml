@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerRequestActivity">
+
+    <include
+        android:id="@+id/requestsBar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+    <TextView
+        android:id="@+id/simpleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requestsBar"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="After you received your products from anyway, make sure your request for the product is deleted."
+        android:textStyle="normal"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/white"
+        android:padding="2dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_all_posts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/simpleText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

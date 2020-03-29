@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RequesterSettingsActivity">
+
+    <include android:id="@+id/settings_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/settings_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settings_profile_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile"
+                />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_profile_image"
+                android:layout_marginTop="5dp"
+                android:text="Status About You Or Your Company:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/inputs"
+                android:hint="Status About You Or Your Company"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_status"
+                android:layout_marginTop="5dp"
+                android:text="Username of the your or your Company:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_username"
+                android:layout_marginTop="5dp"
+                android:text="Profile name of the your or your Company:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_profile_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Profile name"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_profile_full_name"
+                android:layout_marginTop="5dp"
+                android:text="Your country:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Country "
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_country"
+                android:layout_marginTop="5dp"
+                android:text="Shopping hours:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Ex:7.00am-8.00pm"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_dob"
+                android:layout_marginTop="5dp"
+                android:text="Include type (ex: 'normal customer' or company type(You should include key Code):"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Account type"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_gender"
+                android:layout_marginTop="5dp"
+                android:text="Your all contacts:"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <EditText
+                android:id="@+id/settings_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/inputs"
+                android:hint="Ex: WhatsApp, facebook and any other network."
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
+
+
+
+            <Button
+                android:id="@+id/settings_topic_catalogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_relationship_status"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Companies' Types and key codes Here"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/inputs"
+                />
+
+            <Button
+                android:id="@+id/update_account_settings_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/settings_topic_catalogue"
+                android:text="Update Account Settings"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/inputs"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/update_account_settings_buttons"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/sample"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

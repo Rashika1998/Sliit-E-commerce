@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RequesterRegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcome_register"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:text="RoWeb"
+                android:textSize="50dp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome_register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/email"
+                android:ems="10"
+                android:hint="E mail...."
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="textEmailAddress"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:hint="Password....."
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="textPassword"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:hint="Confirm password..."
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="textPassword"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/register_create_account"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/register_confirm_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Create Account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/text07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_create_account"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:text="Before you register you have to aggrey with our terms and conditions go through here and see  "
+                />
+
+            <Button
+                android:id="@+id/terms_button"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/text07"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Terms and conditions"
+                />
+
+            <TextView
+                android:id="@+id/text08"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/terms_button"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

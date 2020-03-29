@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickPostActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/click_post_toolbar"
+                layout="@layout/app_bar_layout">
+
+            </include>
+
+            <ImageView
+                android:id="@+id/click_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/click_post_toolbar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:outlineSpotShadowColor="@color/profileSettings"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/select_image" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="Description"
+                android:textAllCaps="false"
+                android:textColor="@color/sample"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/click_post_image"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/click_post_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:text="Post Description"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/inputs"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="#bcb535"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="Item Name"
+                android:textAllCaps="false"
+                android:textColor="@color/sample"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/click_post_description"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/click_post_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:text="Item Name"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/inputs"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/holo_red_dark"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="All Contacts"
+                android:textAllCaps="false"
+                android:textColor="@color/sample"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/click_post_name"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/click_post_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:text="All Contacts"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/inputs"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/holo_red_dark"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="Product's Type"
+                android:textAllCaps="false"
+                android:textColor="@color/sample"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/click_post_country"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/click_post_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:text="Item Type"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/inputs"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/holo_red_dark"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/edit_post_button"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:layout_below="@+id/click_post_link"
+                android:text="Edit Post Description"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/delete_post_button"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:layout_below="@+id/edit_post_button"
+                android:text="Delete post"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text09"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/delete_post_button"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

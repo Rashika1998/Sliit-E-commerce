@@ -42,7 +42,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:2.1.1'
     implementation 'com.firebaseui:firebase-ui-database:0.4.0'
 
-    implementation 'com.firebaseui:firebase-ui-database:3.2.2'
+    //implementation 'com.firebaseui:firebase-ui-database:3.2.2'
 
     implementation 'io.paperdb:paperdb:2.6'
 
