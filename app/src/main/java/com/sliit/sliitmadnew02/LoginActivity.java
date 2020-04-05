@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity
     private String parentDbName = "Users";
 
     private TextView AdminLink , NotAdminLink ;
-    private TextView ForgetPasswordLink;
+    private TextView ForgetPasswordLink , RequesterLink;
 
     private CheckBox chkBoxRememberMe;
 
@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity
         NotAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
 
         ForgetPasswordLink = (TextView) findViewById(R.id.forget_password_link);
+        RequesterLink = (TextView) findViewById(R.id.requester_link);
 
 
 
@@ -93,6 +94,16 @@ public class LoginActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 Intent forgetPasswordIntent = new Intent(LoginActivity.this , ResetPasswordActivity.class);
+                startActivity(forgetPasswordIntent);
+            }
+        });
+
+
+        RequesterLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent forgetPasswordIntent = new Intent(LoginActivity.this , RequesterLoginActivity.class);
                 startActivity(forgetPasswordIntent);
             }
         });
@@ -144,7 +155,7 @@ public class LoginActivity extends AppCompatActivity
                                 Toast.makeText(LoginActivity.this, "Logged in successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent1 = new Intent(LoginActivity.this , AdminCategoryActivity.class);
+                                Intent intent1 = new Intent(LoginActivity.this , AdminHomeActivity.class);
                                 startActivity(intent1);
                             }
                             else if (parentDbName.equals("Users"))

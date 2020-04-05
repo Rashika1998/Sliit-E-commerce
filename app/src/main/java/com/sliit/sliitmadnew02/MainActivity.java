@@ -9,8 +9,11 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity
 
     private Button joinNewButton , loginButton;
     private ProgressDialog loadingBar;
+    private TextView SellerBegin;
 
 
     @Override
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity
 
         joinNewButton = (Button) findViewById(R.id.main_join_now_btn);
         loginButton = (Button) findViewById(R.id.main_login_btn);
+        SellerBegin = (TextView) findViewById(R.id.seller_begin);
 
         loadingBar = new ProgressDialog(this);
 
@@ -59,6 +64,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        SellerBegin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this , RequesterRegistrationActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
         String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
@@ -76,6 +90,25 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
+    }
+
+
+    //new
+
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (firebaseUser != null)
+        {
+            Intent intent = new Intent(MainActivity.this , RequesterHomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity(intent);
+            finish();
+        }
     }
 
     private void AllowAccess(final String phone, final String password)
