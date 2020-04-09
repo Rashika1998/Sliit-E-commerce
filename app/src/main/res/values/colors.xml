@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#289da4</color>
-    <color name="colorPrimaryDark">#289da4</color>
+    <color name="colorPrimary">#4a0f19</color>
+    <color name="colorPrimaryDark">#4a0f19</color>
     <color name="colorAccent">#E9EBEE</color>
+
+    <color name="new01">#4a0f19</color>
+    <color name="new02">#a22a55</color>
+    <color name="new03">#181817</color>
+    <color name="new04">#0c372b</color>
+
+
+
+
+
+
+
 
 </resources>

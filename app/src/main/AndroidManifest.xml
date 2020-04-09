@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckNewRequestsActivity"></activity>
+        <activity android:name=".RequesterShowItemsActivity"></activity>
+        <activity android:name=".CheckNewRequestsActivity" />
         <activity android:name=".AdminHomeActivity" />
         <activity android:name=".RequesterProductCategoryActivity" />
         <activity android:name=".RequesterAddNewProductActivity" />
@@ -21,10 +22,12 @@
             android:label="@string/title_activity_seller_home" />
         <activity android:name=".RequesterLoginActivity" />
         <activity android:name=".RequesterRegistrationActivity" />
-        <!--<activity android:name=".RequesterSettingsActivity" />
+        <!--
+<activity android:name=".RequesterSettingsActivity" />
         <activity android:name=".RequesterResetPasswordActivity" />
         <activity android:name=".RequesterRegisterActivity" />
-        <activity android:name=".RequesterLoginActivity" />-->
+        <activity android:name=".RequesterLoginActivity" />
+        -->
         <activity android:name=".SampleActivity" />
         <activity android:name=".SearchProductsActivity" />
         <activity android:name=".SettingsActivity" />

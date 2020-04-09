@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
 
@@ -31,10 +31,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Welcome...!"
-        android:textStyle="bold|italic"
+        android:textStyle="normal"
         android:textSize="50sp"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/darker_gray"
         />
 
     <TextView
@@ -46,25 +46,34 @@
         android:layout_marginTop="1dp"
         android:text="Find what you love to buy..."
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
         android:textStyle="italic|normal"
         />
+
+
+            <ImageView
+                android:id="@+id/welcome_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/app_slogan"
+                android:src="@drawable/alogo1"
+                android:layout_marginTop="10dp"/>
 
     <Button
         android:id="@+id/main_join_now_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/app_slogan"
+        android:layout_below="@+id/welcome_img"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button2"
         android:padding="10dp"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:text="Join Now"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         />
 
 
@@ -79,7 +88,7 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         android:text="Already have an Account? Login"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         android:layout_below="@+id/main_join_now_btn"
         android:layout_marginTop="5dp"
         />
@@ -89,12 +98,12 @@
         android:id="@+id/seller_begin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Need Bo Be A Request?"
+        android:text="Need To Be A Requester?"
         android:layout_below="@+id/main_login_btn"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textAlignment="textEnd"
         android:textStyle="normal"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/darker_gray"
         android:layout_marginTop="5dp"/>
 
 

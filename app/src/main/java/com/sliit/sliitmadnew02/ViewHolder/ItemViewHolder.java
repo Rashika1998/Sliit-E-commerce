@@ -9,25 +9,32 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.sliit.sliitmadnew02.Interface.ItemClickListner;
 import com.sliit.sliitmadnew02.R;
 
-public class RequestsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
+
+public class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {
+
     public TextView txtProductName, txtProductDescription, txtProductPrice;
-    public TextView txtRequesterName, txtRequesterAddress, txtRequesterPhone;
     public ImageView imageView;
     public ItemClickListner listner;
 
-    public RequestsViewHolder(View itemView)
+    public TextView txtRequesterName, txtRequesterAddress, txtRequesterPhone , txtRequesterProductStatus;
+
+
+
+    public ItemViewHolder(View itemView)
     {
         super(itemView);
 
-        imageView = (ImageView) itemView.findViewById(R.id.product_image);
-        txtProductName = (TextView) itemView.findViewById(R.id.product_name);
-        txtProductDescription = (TextView) itemView.findViewById(R.id.product_description);
-        txtProductPrice = (TextView) itemView.findViewById(R.id.product_price);
-
+        txtRequesterProductStatus = (TextView) itemView.findViewById(R.id.requester_product_status);
         txtRequesterName = (TextView) itemView.findViewById(R.id.requester_user_name);
         txtRequesterAddress = (TextView) itemView.findViewById(R.id.requester_address);
         txtRequesterPhone = (TextView) itemView.findViewById(R.id.requester_phone);
+
+        imageView = (ImageView) itemView.findViewById(R.id.requester_product_image);
+        txtProductName = (TextView) itemView.findViewById(R.id.requester_product_name);
+        txtProductDescription = (TextView) itemView.findViewById(R.id.requester_product_description);
+        txtProductPrice = (TextView) itemView.findViewById(R.id.requester_product_price);
+
 
     }
 

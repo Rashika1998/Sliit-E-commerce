@@ -12,7 +12,7 @@
         android:id="@+id/r3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/new01"
         android:layout_alignParentTop="true">
 
         <TextView
