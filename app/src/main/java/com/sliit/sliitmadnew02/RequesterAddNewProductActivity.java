@@ -260,7 +260,7 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
         productMap.put("uPhone", sPhone);
         productMap.put("uEmail", sEmail);
         productMap.put("sid", sID);
-        productMap.put("productStatus", "Not approved this product.");
+        productMap.put("productStatus", "Not approved this Request.");
         productMap.put("type", "request");
 
 

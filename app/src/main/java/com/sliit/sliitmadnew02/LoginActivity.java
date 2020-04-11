@@ -156,7 +156,9 @@ public class LoginActivity extends AppCompatActivity
                                 loadingBar.dismiss();
 
                                 Intent intent1 = new Intent(LoginActivity.this , AdminHomeActivity.class);
+                                intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                                 startActivity(intent1);
+                                finish();
                             }
                             else if (parentDbName.equals("Users"))
                             {
@@ -165,7 +167,9 @@ public class LoginActivity extends AppCompatActivity
 
                                 Intent intent2 = new Intent(LoginActivity.this , HomeActivity.class);
                                 Prevalent.currentOnlineUser = usersData;
+                                intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                                 startActivity(intent2);
+                                finish();
                             }
                         }
                         else

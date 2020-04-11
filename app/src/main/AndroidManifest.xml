@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RequesterShowItemsActivity"></activity>
+        <activity android:name=".ManageUserActivity"></activity>
+        <activity android:name=".RequesterShowItemsActivity" />
         <activity android:name=".CheckNewRequestsActivity" />
         <activity android:name=".AdminHomeActivity" />
         <activity android:name=".RequesterProductCategoryActivity" />

@@ -10,7 +10,7 @@ import android.widget.Button;
 public class AdminHomeActivity extends AppCompatActivity
 {
 
-    private Button LogoutBtn, CheckOrdersBtn, maintainProductsBtn , CheckRequestBtn , AddNewItemBtn;
+    private Button LogoutBtn, CheckOrdersBtn, maintainProductsBtn , CheckRequestBtn , AddNewItemBtn , ManageUserBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,6 +24,7 @@ public class AdminHomeActivity extends AppCompatActivity
         maintainProductsBtn = (Button) findViewById(R.id.maintain_btn);
         CheckRequestBtn = (Button) findViewById(R.id.check_request_btn);
         AddNewItemBtn = (Button) findViewById(R.id.admin_add_new_item);
+        ManageUserBtn = (Button) findViewById(R.id.admin_manage_user);
 
 
 
@@ -72,6 +73,15 @@ public class AdminHomeActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent intent = new Intent(AdminHomeActivity.this, AdminCategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ManageUserBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(AdminHomeActivity.this, ManageUserActivity.class);
                 startActivity(intent);
             }
         });

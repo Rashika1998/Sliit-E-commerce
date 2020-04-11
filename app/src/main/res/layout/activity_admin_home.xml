@@ -83,10 +83,26 @@
 
 
     <Button
-        android:id="@+id/admin_logout_btn"
+        android:id="@+id/admin_manage_user"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_below="@+id/admin_add_new_item"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button2"
+        android:text="Manage Users"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/admin_manage_user"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="15dp"
