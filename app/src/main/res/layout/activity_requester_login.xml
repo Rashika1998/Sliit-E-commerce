@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@android:color/white"
     tools:context=".RequesterLoginActivity">
 
     <ScrollView
@@ -32,9 +32,17 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="0dp"
                 android:textSize="30dp"
-                android:textStyle="bold|italic"
-                android:background="@color/colorPrimaryDark"
+                android:textStyle="normal"
+                android:background="@color/new01"
                 android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/welcome_img1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/title_seller"
+                android:src="@drawable/alogo1"
+                android:layout_marginTop="10dp"/>
 
 
             <EditText
@@ -44,13 +52,13 @@
                 android:hint="Enter your E-mail.."
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/title_seller"
+                android:layout_below="@+id/welcome_img1"
                 android:inputType="textEmailAddress"
-                android:layout_marginTop="100dp"
-                android:background="@drawable/inputs1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs2"
                 android:textSize="16sp"
-                android:textColor="@android:color/darker_gray"
-                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:padding="15dp"
                 />
 
@@ -63,11 +71,11 @@
                 android:layout_marginRight="10dp"
                 android:layout_below="@+id/seller_login_email"
                 android:inputType="textPassword"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/inputs1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/inputs2"
                 android:textSize="16sp"
-                android:textColor="@android:color/darker_gray"
-                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:padding="15dp"
                 />
 
@@ -77,15 +85,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/seller_login_password"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:text="Login"
                 android:background="@drawable/button2"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/normal_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seller_login_btn"
+                android:text="Before you login, you have to agree with our terms and conditions"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/normal_txt01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/normal_txt"
+                android:text="Terms and Conditions"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                />
 
 
         </RelativeLayout>
+
     </ScrollView>
 
 </RelativeLayout>

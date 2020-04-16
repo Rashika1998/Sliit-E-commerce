@@ -6,42 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="6dp"
-    android:layout_marginStart="2dp"
+    android:layout_marginStart="3dp"
     android:layout_marginEnd="4dp"
-    app:cardElevation="15dp"
-    android:background="@android:color/white">
+    app:cardElevation="15dp">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button2">
+        android:background="@drawable/border1">
 
 
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:padding="5dp"
-            android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            <TextView
+                android:id="@+id/requester_product_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Status"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                />
 
         <TextView
             android:id="@+id/requester_user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/requester_product_status"
             android:text="Username"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:textAlignment="textStart"
             android:textSize="16sp"
             android:textStyle="normal"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@android:color/darker_gray"
             />
 
 
@@ -49,37 +49,37 @@
                 android:id="@+id/requester_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/requester_user_name"
                 android:text="Address"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textAlignment="textStart"
                 android:textSize="16sp"
                 android:textStyle="normal"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@android:color/darker_gray"
                 />
 
             <TextView
                 android:id="@+id/requester_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/requester_address"
                 android:text="phone"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textAlignment="textStart"
                 android:textSize="16sp"
                 android:textStyle="normal"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@android:color/darker_gray"
                 />
 
-            </LinearLayout>
 
-        </LinearLayout>
 
         <TextView
-            android:id="@+id/product_name"
+            android:id="@+id/requester_product_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayout1"
+            android:layout_below="@+id/requester_phone"
             android:text="Product Name"
             android:textAlignment="center"
             android:textSize="20dp"
@@ -90,10 +90,10 @@
             />
 
         <ImageView
-            android:id="@+id/product_image"
+            android:id="@+id/requester_product_image"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:layout_below="@+id/product_name"
+            android:layout_below="@+id/requester_product_name"
             android:scaleType="fitCenter"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
@@ -101,11 +101,11 @@
             />
 
         <TextView
-            android:id="@+id/product_price"
+            android:id="@+id/requester_product_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_below="@+id/product_image"
+            android:layout_below="@+id/requester_product_image"
             android:text="Product Price"
             android:textSize="18dp"
             android:textColor="@android:color/darker_gray"
@@ -115,11 +115,11 @@
             />
 
         <TextView
-            android:id="@+id/product_description"
+            android:id="@+id/requester_product_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_below="@+id/product_price"
+            android:layout_below="@+id/requester_product_price"
             android:text="Product Description"
             android:layout_marginTop="2dp"
             android:textSize="16dp"

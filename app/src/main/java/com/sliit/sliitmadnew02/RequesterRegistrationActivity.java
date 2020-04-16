@@ -33,7 +33,7 @@ public class RequesterRegistrationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seller_registration);
+        setContentView(R.layout.activity_requester_registration);
 
         mAuth = FirebaseAuth.getInstance();
 

@@ -2,12 +2,12 @@ package com.sliit.sliitmadnew02.Model;
 
 public class Products
 {
-    private String pname, description, price, image, category, pid, date, time;
+    private String pname, description, price, image, category, pid, date, time , uAddress , uName , uPhone , productStatus;
 
     public Products() {
     }
 
-    public Products(String pname, String description, String price, String image, String category, String pid, String date, String time) {
+    public Products(String pname, String description, String price, String image, String category, String pid, String date, String time , String uAddress , String uName , String uPhone , String productStatus) {
         this.pname = pname;
         this.description = description;
         this.price = price;
@@ -16,6 +16,13 @@ public class Products
         this.pid = pid;
         this.date = date;
         this.time = time;
+
+
+        this.uAddress = uAddress;
+        this.uName = uName;
+        this.uPhone = uPhone;
+        this.productStatus = productStatus;
+
     }
 
     public String getPname() {
@@ -80,5 +87,42 @@ public class Products
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+
+
+
+
+
+    public String getuAddress() {
+        return uAddress;
+    }
+
+    public void setuAddress(String uAddress) {
+        this.uAddress = uAddress;
+    }
+
+    public String getuName() {
+        return uName;
+    }
+
+    public void setuName(String uName) {
+        this.uName = uName;
+    }
+
+    public String getuPhone() {
+        return uPhone;
+    }
+
+    public void setuPhone(String uPhone) {
+        this.uPhone = uPhone;
+    }
+
+    public String getProductStatus() {
+        return productStatus;
+    }
+
+    public void setProductStatus(String productStatus) {
+        this.productStatus = productStatus;
     }
 }

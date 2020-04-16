@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new03"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rell1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/new01"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/welcome_txt001"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Welcome To Your Profile"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button_all_item_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rell1"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/button2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="See Your All Requests"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/normal_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_all_item_show"
+        android:text="If your products status is 'Approved' , your item will be delivered soon.
+After you received mail makes sure your purchase details should be sent and you are allowed to remove
+any non approved requests in any second."
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

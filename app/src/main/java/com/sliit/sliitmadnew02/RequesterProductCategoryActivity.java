@@ -17,7 +17,7 @@ public class RequesterProductCategoryActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seller_product_category);
+        setContentView(R.layout.activity_requester_product_category);
 
 
         tShirts = (ImageView) findViewById(R.id.t_shirts);

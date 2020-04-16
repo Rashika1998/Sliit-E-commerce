@@ -177,7 +177,7 @@ public class HomeActivity extends AppCompatActivity
     {
         super.onStart();
         FirebaseRecyclerOptions<Products> options = new FirebaseRecyclerOptions.Builder<Products>()
-                .setQuery(ProductsRef.orderByChild("productStatus").equalTo("approved") , Products.class)
+                .setQuery(ProductsRef.orderByChild("type").equalTo("admin") , Products.class)
                 .build();
 
         FirebaseRecyclerAdapter<Products , ProductViewHolder> adapter =

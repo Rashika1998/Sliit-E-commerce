@@ -228,12 +228,14 @@ public class AdminAddNewProductActivity extends AppCompatActivity
             productMap.put("pname", Pname);
 
 
-            productMap.put("sellerName", "Admin");
-            productMap.put("sellerAddress", "none");
-            productMap.put("sellerPhone", "none");
-            productMap.put("sellerEmail", "none");
+            productMap.put("uName", "Admin");
+            productMap.put("uAddress", "none");
+            productMap.put("uPhone", "none");
+            productMap.put("uEmail", "none");
             productMap.put("sid", "none");
             productMap.put("productStatus", "approved");
+            productMap.put("type", "admin");
+
 
         ProductsRef.child(productRandomKey).updateChildren(productMap)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

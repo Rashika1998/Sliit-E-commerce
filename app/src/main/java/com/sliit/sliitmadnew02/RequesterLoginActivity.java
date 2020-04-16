@@ -28,7 +28,7 @@ public class RequesterLoginActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seller_login);
+        setContentView(R.layout.activity_requester_login);
 
         mAuth = FirebaseAuth.getInstance();
 

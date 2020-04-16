@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:background="@drawable/buttons">
+        android:background="@drawable/button2">
 
         <TextView
             android:id="@+id/cart_product_name"

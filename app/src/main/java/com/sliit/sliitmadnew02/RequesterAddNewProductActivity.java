@@ -55,7 +55,7 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seller_add_new_product);
+        setContentView(R.layout.activity_requester_add_new_product);
 
         mToolbar = (Toolbar) findViewById(R.id.add_new_product_toolbar);
         setSupportActionBar(mToolbar);
@@ -122,7 +122,6 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
 
     }
 
-
     private void OpenGallery()
     {
         Intent galleryIntent = new Intent();
@@ -130,7 +129,6 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
         galleryIntent.setType("image/*");
         startActivityForResult(galleryIntent, GalleryPick);
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
@@ -257,12 +255,13 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
         productMap.put("price", Price);
         productMap.put("pname", Pname);
 
-        productMap.put("requesterName", sName);
-        productMap.put("requesterAddress", sAddress);
-        productMap.put("requesterPhone", sPhone);
-        productMap.put("requesterEmail", sEmail);
+        productMap.put("uName", sName);
+        productMap.put("uAddress", sAddress);
+        productMap.put("uPhone", sPhone);
+        productMap.put("uEmail", sEmail);
         productMap.put("sid", sID);
-        productMap.put("requesterProductStatus", "Not approved this product.");
+        productMap.put("productStatus", "Not approved this Request.");
+        productMap.put("type", "request");
 
 
         ProductsRef.child(productRandomKey).updateChildren(productMap)
@@ -272,7 +271,7 @@ public class RequesterAddNewProductActivity extends AppCompatActivity
                     {
                         if (task.isSuccessful())
                         {
-                            Intent intent = new Intent(RequesterAddNewProductActivity.this, RequesterHomeActivity.class);
+                            Intent intent = new Intent(RequesterAddNewProductActivity.this, RequesterProductCategoryActivity.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

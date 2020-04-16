@@ -17,7 +17,7 @@
         android:textColor="@android:color/white"
         android:textAlignment="center"
         android:textStyle="italic|bold"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/new01"
         android:padding="10dp"
         />
 
@@ -30,8 +30,9 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:hint="Your Name"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@drawable/inputs1"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:background="@drawable/inputs2"
         android:padding="15dp"
         />
 
@@ -45,8 +46,9 @@
         android:inputType="number"
         android:layout_marginRight="15dp"
         android:hint="Your Phone Number"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@drawable/inputs1"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:background="@drawable/inputs2"
         android:padding="15dp"
         />
 
@@ -60,8 +62,9 @@
         android:layout_marginRight="15dp"
         android:hint="Your Home Address"
         android:inputType="textMultiLine"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@drawable/inputs1"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:background="@drawable/inputs2"
         android:padding="15dp"
         />
 
@@ -75,9 +78,9 @@
         android:layout_marginRight="15dp"
         android:hint="Your City Name"
         android:textSize="20sp"
-        android:textColor="@android:color/darker_gray"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@drawable/inputs1"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/inputs2"
         android:padding="15dp"
         />
 
@@ -87,11 +90,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
         android:text="Confirm"
-        android:background="@drawable/buttons"
+        android:background="@drawable/button2"
         android:textColor="@android:color/white"
         android:textSize="16dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
         />
 
 

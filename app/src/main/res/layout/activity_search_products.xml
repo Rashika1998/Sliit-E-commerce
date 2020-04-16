@@ -12,7 +12,7 @@
         android:id="@+id/r5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/new01"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
@@ -23,7 +23,7 @@
             android:hint="Enter product name...."
             android:textSize="16dp"
             android:textStyle="normal"
-            android:background="@drawable/inputs"
+            android:background="@drawable/inputs1"
             android:padding="12dp"
             android:layout_marginStart="17dp"
             android:layout_centerVertical="true"
