@@ -9,8 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/button2">
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/button1">
 
         <TextView
             android:id="@+id/order_user_name"
@@ -87,7 +89,7 @@
             android:textColor="@android:color/darker_gray"
             android:textSize="15dp"
             android:textAllCaps="false"
-            android:background="@drawable/button1"
+            android:background="@drawable/buttons"
             android:layout_below="@+id/order_date_time"
             />
 

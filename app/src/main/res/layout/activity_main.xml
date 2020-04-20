@@ -27,26 +27,26 @@
     <TextView
         android:id="@+id/app_start_welcome"
         android:layout_width="300dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Welcome...!"
         android:textStyle="normal"
         android:textSize="50sp"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/new05"
         />
 
     <TextView
         android:id="@+id/app_slogan"
-        android:layout_width="180dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/app_start_welcome"
         android:layout_marginTop="1dp"
         android:text="Find what you love to buy..."
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textAlignment="textEnd"
+        android:textColor="@color/new05"
         android:textSize="18sp"
         android:textStyle="italic|normal"
         />
@@ -103,7 +103,7 @@
         android:textSize="18sp"
         android:textAlignment="textEnd"
         android:textStyle="normal"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/new05"
         android:layout_marginTop="5dp"/>
 
 

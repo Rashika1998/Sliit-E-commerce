@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.sliit.sliitmadnew02.Interface.ItemClickListner;
 import com.sliit.sliitmadnew02.Model.Products;
+import com.sliit.sliitmadnew02.ViewHolder.ItemViewHolder;
 import com.sliit.sliitmadnew02.ViewHolder.ProductViewHolder;
 import com.squareup.picasso.Picasso;
 
@@ -57,14 +58,20 @@ public class CheckNewRequestsActivity extends AppCompatActivity
                 .setQuery(unverifiedProductsRef.orderByChild("type").equalTo("request") , Products.class)
                 .build();
 
-        FirebaseRecyclerAdapter<Products , ProductViewHolder> adapter =
-                new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
+        FirebaseRecyclerAdapter<Products , ItemViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Products, ItemViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull final ProductViewHolder holder, int position, @NonNull final Products model)
+                    protected void onBindViewHolder(@NonNull final ItemViewHolder holder, int position, @NonNull final Products model)
                     {
+
+                        holder.txtRequesterProductStatus.setText(model.getProductStatus());
+                        holder.txtRequesterName.setText("Requester Name : " + model.getuName());
+                        holder.txtRequesterAddress.setText("Requester Address : " + model.getuAddress());
+                        holder.txtRequesterPhone.setText("Requester Phone : " + model.getuPhone());
+
                         holder.txtProductName.setText(model.getPname());
                         holder.txtProductDescription.setText(model.getDescription());
-                        holder.txtProductPrice.setText("price:" + model.getPrice() + " $");
+                        holder.txtProductPrice.setText("price: " + model.getPrice() + " $");
                         Picasso.with(CheckNewRequestsActivity.this).load(model.getImage()).placeholder(R.drawable.profile).into(holder.imageView);
 
 
@@ -116,10 +123,10 @@ public class CheckNewRequestsActivity extends AppCompatActivity
 
                     @NonNull
                     @Override
-                    public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+                    public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
                     {
-                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_items_layout , parent , false);
-                        ProductViewHolder holder = new ProductViewHolder(view);
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.all_requests_layout , parent , false);
+                        ItemViewHolder holder = new ItemViewHolder(view);
                         return holder;
                     }
                 };

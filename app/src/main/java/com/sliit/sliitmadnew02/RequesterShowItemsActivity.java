@@ -70,13 +70,13 @@ public class RequesterShowItemsActivity extends AppCompatActivity
 
                         //new new
                         holder.txtRequesterProductStatus.setText(model.getProductStatus());
-                        holder.txtRequesterName.setText(model.getuName());
-                        holder.txtRequesterAddress.setText(model.getuAddress());
-                        holder.txtRequesterPhone.setText(model.getuPhone());
+                        holder.txtRequesterName.setText("Your name : " + model.getuName());
+                        holder.txtRequesterAddress.setText("Your address : " + model.getuAddress());
+                        holder.txtRequesterPhone.setText("Your phone : " + model.getuPhone());
 
                         holder.txtProductName.setText(model.getPname());
                         holder.txtProductDescription.setText(model.getDescription());
-                        holder.txtProductPrice.setText("price:" + model.getPrice() + " $");
+                        holder.txtProductPrice.setText("price: " + model.getPrice() + " $");
                         Picasso.with(RequesterShowItemsActivity.this).load(model.getImage()).placeholder(R.drawable.profile).into(holder.imageView);
 
 

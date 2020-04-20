@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@android:color/white"
     tools:context=".AdminAddNewProductActivity">
 
 
@@ -53,8 +53,9 @@
         android:hint="Product Name..."
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/inputs1"
-        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/inputs2"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         />
 
 
@@ -69,8 +70,9 @@
         android:hint="Product Description..."
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/inputs1"
-        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/inputs2"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         />
 
 
@@ -85,8 +87,9 @@
         android:hint="Product Price..."
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/inputs1"
-        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/inputs2"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         />
 
 

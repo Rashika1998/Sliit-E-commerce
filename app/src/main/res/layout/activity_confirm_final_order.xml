@@ -16,7 +16,7 @@
         android:textSize="22dp"
         android:textColor="@android:color/white"
         android:textAlignment="center"
-        android:textStyle="italic|bold"
+        android:textStyle="normal"
         android:background="@color/new01"
         android:padding="10dp"
         />

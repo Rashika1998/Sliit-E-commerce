@@ -52,8 +52,8 @@ public class AdminNewOrdersActivity extends AppCompatActivity {
                 new FirebaseRecyclerAdapter<AdminOrders, AdminNewOrdersActivity.AdminOrdersViewHolder>(options) {
                     @Override
                     protected void onBindViewHolder(@NonNull AdminNewOrdersActivity.AdminOrdersViewHolder holder, final int position, @NonNull final AdminOrders model) {
-                        holder.userName.setText("Name: " + model.getName());
-                        holder.userPhoneNumber.setText("Phone: " + model.getPhone());
+                        holder.userName.setText("Buyer name : " + model.getName());
+                        holder.userPhoneNumber.setText("phone : " + model.getPhone());
                         holder.userTotalPrice.setText("Total Amount =  $" + model.getTotalAmount());
                         holder.userDateTime.setText("Order at: " + model.getDate() + "  " + model.getTime());
                         holder.userShippingAddress.setText("Shipping Address: " + model.getAddress() + ", " + model.getCity());
